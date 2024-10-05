@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Norse-Bold.otf";
+  src: url(./Norse-Bold.otf);
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+  font-family: sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+.container {
+  background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-repeat: no-repeat;
+  position: center;
+  background-size: contain;
+  min-height: 100vh;
+  width: auto;
+  display: flex;
+}
+.logo {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  width: 40%;
+  margin-top: 100px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 80px;
+}
+.form_container {
+  background-color: #eee;
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.logo .odin {
+  font-size: 4rem;
+  font-family: "Norse-Bold.otf";
+}
+
+.form_wrapper p {
+  width: 48ch;
+}
+.form_wrapper {
+  width: 100%;
+}
+p,
+button {
+  margin-left: 2rem;
+}
+.fill_form {
+  background-color: #fff;
+  width: 100%;
+  margin: 30px 0;
+  padding: 16px 2rem;
+}
+.what {
+  margin: 30px 2rem;
+}
+
+input {
+  border: 1px solid #e5e7eb;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  width: 20vw;
+}
+.fill_form div {
+  margin: 16px 0;
+}
+label {
+  font-size: calc(0.2rem + 1vw);
+}
+input:focus {
+  border: 1px solid blue;
+  box-shadow: 0px 0px 4px 4px #eee;
+}
+input:valid {
+  border: 1px solid #8bc34a;
+  background-color: rgba(139, 195, 74, 0.25);
+}
+input::placeholder {
+  color: #ddd;
+}
+input[type="password"]:invalid {
+  border: 1px solid red;
+}
+.input_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 2rem;
+}
+button {
+  border: none;
+  background-color: #596d48;
+  color: #fff;
+  padding: 8px 2rem;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.submit span {
+  color: #596d48;
+}
+.credit {
+  /* display: inline; */
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  color: #fff;
+}
+.credit a {
+  color: #fff;
+}

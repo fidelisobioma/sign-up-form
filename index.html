@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="credit">
+        <a
+          href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Halie West</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Unsplash</a
+        >
+      </div>
+      <div class="logo">
+        <div>
+          <img src="./images/odin-lined.png" alt="odin logo" />
+        </div>
+        <div class="odin">ODIN</div>
+      </div>
+
+      <div class="form_container">
+        <div class="form_wrapper">
+          <p>
+            This is not a real online service! You need something like this in
+            your life to help you to realize your deepest dream.
+          </p>
+          <p>Sign up now to get started.</p>
+          <p class="what">You know what you want</p>
+          <form action="#">
+            <div class="fill_form">
+              <h1>Let's do this!</h1>
+              <div class="input_container">
+                <div class="left">
+                  <div>
+                    <label for="first_name">FIRST NAME</label>
+                    <br />
+                    <input
+                      type="text"
+                      id="first_name"
+                      name="first_name"
+                      placeholder="Fidelis"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label for="email">EMAIL</label>
+                    <br />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="example@gmail.com"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label for="password">PASSWORD</label>
+                    <br />
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      pattern="\w{8,}"
+                      placeholder="minimum lenght of 8 character"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="righ">
+                  <div>
+                    <label for="last_name">LAST NAME</label>
+                    <br />
+                    <input
+                      type="text"
+                      id="last_name"
+                      name="last_name"
+                      placeholder="Mbam"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <br />
+                    <input
+                      type="tel"
+                      id="phone_number"
+                      name="phone_number"
+                      pattern="^[\d]{11}$"
+                      placeholder="08132034923"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                    <br />
+                    <input
+                      type="password"
+                      id="confirm_password"
+                      name="confirm_password"
+                      pattern="\w{8,}"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="submit">
+              <button type="submit">Create Account</button>
+              <p>Already have an account? <span>Log in</span></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
